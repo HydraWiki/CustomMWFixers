@@ -1,5 +1,5 @@
 {
-    "name": "HydraWiki/CustomMWFixers",
+    "name": "hydrawiki/custom-mw-fixers",
     "description": "A set of custom fixers for PHP CS Fixer and the Hydra project",
     "type": "library",
     "keywords": [
