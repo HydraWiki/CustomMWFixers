@@ -1,5 +1,5 @@
 {
-    "name": "valeryan/HydraCustomFixers",
+    "name": "HydraWiki/CustomMWFixers",
     "description": "A set of custom fixers for PHP CS Fixer and the Hydra project",
     "type": "library",
     "keywords": [
@@ -7,7 +7,7 @@
         "php-cs-fixer",
         "hydra"
     ],
-    "license": "MIT",
+    "license": "GNU GENERAL PUBLIC LICENSE",
     "authors": [
         {
             "name": "Samuel Hilson",
@@ -31,7 +31,7 @@
     },
     "autoload": {
         "psr-4": {
-            "HydraCustomFixers\\": "src/"
+            "CustomMWFixers\\": "src/"
         }
     },
     "autoload-dev": {

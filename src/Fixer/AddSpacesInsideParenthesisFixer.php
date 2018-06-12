@@ -1,16 +1,23 @@
 <?php
 
-namespace HydraCustomFixers\Fixer;
+/*
+ * This file is part of Hydra Custom Media Wiki Fixers.
+ *
+ * This source file is subject to the GNU GENERAL PUBLIC LICENSE license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
+namespace CustomMWFixers\Fixer;
 
 use PhpCsFixer\Fixer\DefinedFixerInterface;
 use PhpCsFixer\FixerDefinition\CodeSample;
 use PhpCsFixer\FixerDefinition\FixerDefinition;
 use PhpCsFixer\Tokenizer\CT;
-use PhpCsFixer\Tokenizer\Tokens;
 use PhpCsFixer\Tokenizer\Token;
+use PhpCsFixer\Tokenizer\Tokens;
 
 /**
- * Fixer for rules for MediaWiki.
+ * Fixer for spacey parenthesis for MediaWiki.
  *
  * @author Samuel Hilson
  */
@@ -69,7 +76,7 @@ function foo(\$bar, \$baz)
             $type = Tokens::detectBlockType($token)['type'];
             $endIndex = $tokens->findBlockEnd($type, $index);
             $charAfterParenStart = $tokens[$index + 1];
-            $charBeforeParenEnd = $tokens[$endIndex -1];
+            $charBeforeParenEnd = $tokens[$endIndex - 1];
 
             // add space after opening `(` or `[`
             if (!$charAfterParenStart->isWhiteSpace() &&
