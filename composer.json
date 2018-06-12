@@ -7,7 +7,7 @@
         "php-cs-fixer",
         "hydra"
     ],
-    "license": "GNU GENERAL PUBLIC LICENSE",
+    "license": "MIT",
     "authors": [
         {
             "name": "Samuel Hilson",
